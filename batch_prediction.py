@@ -66,7 +66,7 @@ df["Predicted_G3"] = predictions.round(2)
 # Save CSV
 # -----------------------------------
 
-df.to_csv("batch_predictions.csv", index=False)
+df.to_csv(r"D:\MLOps\batch_predictions.csv", index=False)
 
 print("\nBatch Prediction Completed Successfully")
 
