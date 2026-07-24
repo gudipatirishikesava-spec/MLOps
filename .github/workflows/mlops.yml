@@ -31,7 +31,7 @@ jobs:
         run: python run_pipeline.py
 
       - name: Run Batch Prediction
-        run: D:\MLOps\Project\Pipeline\run_pipeline.py
+        run: "D:\MLOps\Project\Pipeline\run_pipeline.py"
 
 
       - name: Deployment Successful
