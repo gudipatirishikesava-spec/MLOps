@@ -10,7 +10,7 @@ import joblib
 # Load Processed Dataset
 # -----------------------------------
 
-df = pd.read_csv(r"D:\MLOps\processed_student_data.csv")
+df = pd.read_csv("MLOps\processed_student_data.csv")
 
 print("Dataset Loaded Successfully")
 
@@ -30,7 +30,7 @@ X = pd.get_dummies(X)
 # Load Deployment Model
 # -----------------------------------
 
-model = joblib.load(r"D:\MLOps\deployment\deployment_model.pkl")
+model = joblib.load("MLOps\deployment\deployment_model.pkl")
 
 print("Deployment Model Loaded Successfully")
 
@@ -66,7 +66,7 @@ df["Predicted_G3"] = predictions.round(2)
 # Save CSV
 # -----------------------------------
 
-df.to_csv(r"D:\MLOps\batch_predictions.csv", index=False)
+df.to_csv("MLOps\batch_predictions.csv", index=False)
 
 print("\nBatch Prediction Completed Successfully")
 
