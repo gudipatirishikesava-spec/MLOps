@@ -6,6 +6,7 @@ on:
       - master
 
 jobs:
+
   mlops-pipeline:
 
     runs-on: ubuntu-latest
@@ -27,12 +28,16 @@ jobs:
           pip install joblib
           pip install flask
 
+      - name: Check Project Structure
+        run: |
+          ls
+          ls Pipeline
+
       - name: Run ML Pipeline
-        run: python run_pipeline.py
+        run: python Project/Pipeline/run_pipeline.py
 
       - name: Run Batch Prediction
-        run: "D:\MLOps\Project\Pipeline\run_pipeline.py"
-
+        run: python batch_prediction.py
 
       - name: Deployment Successful
         run: echo "Deployment Completed Successfully"
