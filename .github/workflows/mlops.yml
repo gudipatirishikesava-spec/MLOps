@@ -28,10 +28,10 @@ jobs:
           pip install flask
 
       - name: Run ML Pipeline
-        run: python Pipeline/run_pipeline.py
+        run: python D:\MLOps\Project\Pipeline\run_pipeline.py
 
       - name: Run Batch Prediction
-        run: python batch_prediction.py
+        run: python D:\MLOps\batch_predictions.csv
 
       - name: Deployment Successful
         run: echo "Deployment Completed Successfully"
