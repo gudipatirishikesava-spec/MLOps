@@ -31,7 +31,7 @@ jobs:
         run: python run_pipeline.py
 
       - name: Run Batch Prediction
-        run: python batch_predictions.csv
+        run: batch_predictions.csv
 
       - name: Deployment Successful
         run: echo "Deployment Completed Successfully"
