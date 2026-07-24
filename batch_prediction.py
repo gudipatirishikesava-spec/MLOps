@@ -30,7 +30,7 @@ X = pd.get_dummies(X)
 # Load Deployment Model
 # -----------------------------------
 
-model = joblib.load("deployment/deployment_model.pkl")
+model = joblib.load(r"D:\MLOps\deployment\deployment_model.pkl")
 
 print("Deployment Model Loaded Successfully")
 
